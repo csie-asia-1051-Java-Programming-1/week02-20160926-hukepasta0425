@@ -8,7 +8,18 @@ public class hw03_105021031 {
 		System.out.println("輸入西元年:");
 		int a=src.nextInt();
 		if(a%4==0||a%100>0)
-		{}
+		{
+			System.out.println("閏年!");
+		}
+		else if(a%400==0)
+		{
+			System.out.println("閏年!");
+		}
+		else if(a%1000==0)
+		{
+			System.out.println("閏年!");
+		}
+		
 		else{
 			System.out.println("平年!");
 		}
