@@ -7,7 +7,7 @@ public class hw03_105021031 {
 		Scanner src =new Scanner(System.in);
 		System.out.println("輸入西元年:");
 		int a=src.nextInt();
-		if(a%4==0||a%100>0)
+		if(a%4==0&&a%100>0)
 		{
 			System.out.println("閏年!");
 		}

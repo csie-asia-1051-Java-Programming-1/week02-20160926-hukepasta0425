@@ -21,15 +21,24 @@ public class ex03_105021031 {
 		int c = src.nextInt();
 		int d = src.nextInt();
 
-		int r = (c * 60 + d) - (a * 60 + b);
-		r = r - r % 30;
+		int r = ((c * 60 + d) - (a * 60 + b))/30;
+		
 		// System.out.print(r);
 		int sum = 0;
 
-		sum = sum + 120+160;
-			r=r-240;
-		int x=r/30;
-		sum=sum+x*60;
+		
+		if(r>8)
+		{
+			sum=120+160+(r-8)*60;
+		}
+		else if(r>4&&r<=8)
+		{
+			sum=120+(r-4)*40;
+		}
+		else
+		{
+			sum=r*30;
+		}
 		System.out.print(sum);
 
 	}
