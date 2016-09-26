@@ -6,12 +6,24 @@ package ex;
  * Date: 2016/09/26
  * Author: 1050210XX 周永振老師
  */
-
-public class ex02_1050210XX {
+import java.util.*;
+public class ex02_105021031 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+			Scanner src=new Scanner(System.in);
+			int x=src.nextInt();
+			int y=src.nextInt();
+			double a= (Math.pow(x,2))+(Math.pow(y, 2));
+			double sum=Math.sqrt(a);
+			if(sum<=100)
+			{
+				System.out.print("True");
+			}
+			else
+			{
+				System.out.print("False");
+			}
 	}
 
 }
